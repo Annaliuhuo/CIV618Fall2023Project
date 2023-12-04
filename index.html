@@ -78,8 +78,10 @@
                     <div class="container">
                         <div class="carousel-centered">
                             <div class="margin-b-40">
-                                <h1 class="carousel-title">Sediment transport modeling from upstream reaches of Galveston Bay during Hurricane Harvey</h1>
-                                <p class="color-white">Course Project Fall 2023</p>
+                                <h1 class="carousel-title">Sediment Mobilization from Upstream Reaches of Galveston Bay During Hurricane Harvey</h1>
+                                <p class="color-white" style="font-size: 20px">Course Project Fall 2023</p>
+<p class="color-white" style="text-align: right; margin-right: 20px;">Zhiyun Du: zdu@vims.edu </p>
+<p class="color-white" style="text-align: right; margin-right: 20px;">Hanyu Tang: htang63@wisc.edu</p>
                             </div>
                             <!--<a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Details</a>-->
                         </div>
@@ -114,7 +116,7 @@
                             <h1 style="font-size: 36px;" font-weight: bold;">Hurricane Harvey</h1>
   
 <ul>
-  <li style="font-size: 20px">Category 4 hurricane</li>
+  <li style="font-size: 20px">Category 4 hurricane impacted Texas in August 2017</li>
   <li style="font-size: 20px">Highest winds: 130 mph (215 km/h)</li>
   <li style="font-size: 20px">Lowest pressure: 937 mbar</li>
   <li style="font-size: 20px">Damage: $125 billion (2017 USD)</li>
@@ -130,7 +132,7 @@
 <br>
 <br>
  						<li style="font-size: 20px;">Seventh largest estuary in the US</li>
- 						<li style="font-size: 20px;">A complex mixture of sea water and fresh water</li>
+ 						<li style="font-size: 20px;">connected to the Metropolitan Huston, highly urbanized</li>
 
 						</ul> 
                         </div>
@@ -139,6 +141,7 @@
 
 
 						 <img class="full-width img-responsive wow fadeInUp" src="img/500x500/05.png" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
+<figcaption>Hurricane Harvey Rainfall for Metropolitan Houston and eastern Texas (https://www.nhc.noaa.gov) (https://www.ncdc.noaa.gov)<sup>2</sup></figcaption>
                     </div>
 
                     </div>
@@ -150,14 +153,17 @@
 <br>
 <h3 style="font-size: 36px;">Why Harvey so serious?</h3>
 <ul>
-  <li style="font-size: 20px;">Micro-tidal meteorologically dominant bay, meteorologically dominate bay, sediment resuspension and transport results from cold fronts</li>
-  <li style="font-size: 20px;">Sediment resuspension and transport result from cold fronts</li>
-  <li style="font-size: 20px;">High withdrawal rate of groundwater resulted in elevated land subsidence</li>
+  <li style="font-size: 20px;">High land subsidence rate due to industrial activities, more susceptible to storm surge </li>
+  <li style="font-size: 20px;">Sediment resuspension and transport into the bay</li>
+  <li style="font-size: 20px;">Interactions of several factors (river runoffs & storm surge) induced a more severe and extended compound flooding;</li>
   <li style="font-size: 20px;">Harvey was a slow-moving tropical cyclone with the potential to deliver substantially greater volumes of floodwaters</li>
 </ul>
-<br>
-<br>
+
 </div>
+<br>
+<br>
+<br>
+<br>
 <table>
   <tr>
     <td style="vertical-align: top; width: 50%;">
@@ -166,13 +172,11 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
       <h3 style="font-size: 36px;">Motivation</h3>
+
       <ul>
-        <li style="font-size: 20px;">Harvey deposited 131.34 &times; 10<sup>6</sup> tons of sediment, representing 31 years of annual sediment load in the bay</li>
-        <li style="font-size: 20px;">It also resulted in the erosion of 16.4 &times; 10<sup>6</sup> tons of sediment, containing at least 3.43 tons of Hg. </li>
+        <li style="font-size: 20px;">Harvey deposited 131.34 &times; 10<sup>6</sup> tons of sediment, representing 31 years of annual sediment load in the bay, containing at least 5 tons of Hg. <sup>2</sup></li>
+        <li style="font-size: 20px;">Develop a numerical model that can represent hydrodynamics during extreme events and apply the model for tracer transport (sediment, mercury).</li>
       </ul>
     </td>
     <td style="vertical-align: top; width: 40%;">
@@ -195,11 +199,11 @@
                             		<div class="margin-t-50 margin-b-30">
                                 		<h2>Research Goals</h2>
                                 	 <ul>
-  							<li>Modeling the influences of Buffalo Bayou and San Jacinto River on sediment dynamics during Harvey</li>
-  							<li>Estimate total erosion and deposition masses</li>
-  							<li>Compare deposition patterns: model vs. sediment core data</li>
+  							<li style="font-size: 20px;">Modeling the influences of Buffalo Bayou and San Jacinto River on sediment dynamics during Harvey</li>
+  							<li style="font-size: 20px;">Estimate sediment flux from San Jacinto Estuary to Galveston Bay</li>
+  							<li style="font-size: 20px;">Compare deposition patterns: model vs. sediment core data</li>
 						 </ul>
-                                <img class="img-responsive" src="img/970x647/08.png">
+                                
                             </div>
                            </div>
                         </div>
@@ -207,66 +211,12 @@
                         <div class="col-md-5 col-sm-7 col-md-offset-2">
                             <!-- Accordion -->
                             <div class="accordion">
+
                                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    Define & discretize the domain
-
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                              
-										<ul>
-  											<li style="color: white;">San Jacinto Estuary + upper Galveston Bay</li>
-  											<li style="color: white;">High resolution resolving the deep Houston Shipping Channel and Buffalo Bayou (width of 160-300 m)</li>
-										</ul>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Calculate variables 
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                                e.g., velocity, sediment concentration
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingThree">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Temporal & Spatial dimension
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                            <div class="panel-body">
-                                                <ul>
-  											<li style="color: white;">Initial conditions: defining the state at first timestep</li>
-												<ul>
-     											 <li style="color: white;">3D momentum, salinity, temperature: from a parent SCHISM model</li>
-    												 <li style="color: white;">Sediment bed properties: Texas Coastal Sediments Geodatabase</li>
-  												</ul>
-  											<li style="color: white;">Boundary conditions</li>
-   												<ul>
-     											 <li style="color: white;">River discharge: National Water Model</li>
-      											 <li style="color: white;">River sediment: USGS Texas Real-Time Water Quality</li>
-      											 <li style="color: white;">Open boundary conditions: from a larger-scale parent ROMS model (~100 m resolution)</li>
-     											</ul>
-										</ul>
-                                            </div>
-                                        </div>
+                                    <div class="panel panel-center" style="margin-top: auto; margin-bottom: auto; text-align: center;">
+								<h4 style="font-weight: normal; font-family: Arial;">  Model domain with ~20 m resolution<br><br></h4>
+                                        <img class="img-responsive" src="img/970x647/08.png">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +226,7 @@
                     <!--// end row -->
                 </div>
             </div>
-        </div>
+ 
         <!-- End About -->
 
         <!-- Latest Products -->
@@ -284,46 +234,30 @@
             <div class="content-lg container">
                 <div class="row margin-b-40">
                     <div class="col-sm-6">
-                        <h2>Model simulation</h2>
-                        <p>Time:08/05/2017 ~ 09/15/2017<br>Analysis period: 08/25 ~ 09/05</p>
+                        <h2>Model Implementation</h2>
+           
                     </div>
                 </div>
                 <!--// end row -->
 
                 <div class="row">
 				<!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
+                    <div class="col-sm-6 sm-margin-b-50">
                         <div class="margin-b-20">
                             <img class="img-responsive" src="img/970x647/06.jpg" alt="Latest Products Image">
                         </div>
-                        <h4><a href="#">Time-series of the flooding</a></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-
+                       
                     </div>
                     <!-- End Latest Products -->
+<div class="col-sm-6 sm-margin-b-50" style="margin-top: auto; margin-bottom: auto; text-align: center;">
+<div class="margin-b-20">
+</div>
+<h4 style=" font-size: 2em;">Time-series of the model input</a></h4>
+<p  style="font-size: 1.3em; font-family: Arial;color: black">Notice the time lags among different factors;<br> Interactions of Buffalo Bayou, San Jacinto River, and storm surge caused a compound flooding event.</p>
+  </div>
+                   
 
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <img class="img-responsive" src="img/970x647/04.jpg" alt="Latest Products Image">
-                        </div>
-                        <h4><a href="#">Water levels at Manchester TX</a></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-
-                    </div>
-                    <!-- End Latest Products -->
-
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <img class="img-responsive" src="img/970x647/05.jpg" alt="Latest Products Image">
-                        </div>
-                        <h4><a href="#">Water levels at Morgans Point</a></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-
-                    </div>
-                    <!-- End Latest Products -->
-
+                    
                     
                 </div>
                 <!--// end row -->
@@ -331,27 +265,68 @@
         </div>
         <!-- End Latest Products -->
 
+
+
+           <div class="bg-color-sky-light">
+		
+                <div class="content-log container">
+                    <div class="row">
+				<div id="Validation of Hydrodynamics">
+<h2><br>Validation of Hydrodynamics</h2>
+                        	<div class="col-md-5 col-sm-5 md-margin-b-60">
+                            		<div class="margin-t-50 margin-b-30">
+                                		
+<img class="img-responsive" src="img/970x647/04.jpg">
+                                
+                            </div>
+                           </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-7 col-md-offset-2">
+                            <!-- Accordion -->
+                            <div class="accordion">
+<div class="margin-t-50 margin-b-30">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-center" style="margin-top: auto; margin-bottom: auto; text-align: center;">
+
+                                        <img class="img-responsive" src="img/970x647/05.jpg">
+                                       
+                                    </div>
+</div>
+
+
+
+                               </div>
+
+                            </div>
+
+                            <!-- End Accodrion -->
+                        </div>
+                    </div>
+                    <!--// end row -->
+<p style="font-size: 1.5em;"><br><br>Model agrees wells with observations in terms of hydrodynamics. The simulation reproduces multiple peaks in water levels (due to different factors) and the extended flooding. <br> <br></p>
+ 
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- Pricing -->
         <div id="pricing">
-            <div class="bg-color-sky-light">
-                <div class="content-lg container">
-                    <div class="row row-space-1">
+ 
+                <div class="content-log container">
+                  
                     
                             <!-- Pricing -->
                             <div class="pricing">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-chemistry"></i>
-                                    <h3>Depth-averaged Suspended Sediment Concentration</h3>
-                                    <p>3 Main Sources</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Storm Surge</li>
-                                    <li class="pricing-list-item">Buffalo Bayou</li>
-                                    <li class="pricing-list-item">San Jacinto River</li>
-                                </ul>
-                                <h4>Most of the sediments came from the two rivers</h4>
-                                <img class="img-responsive" src="img/970x647/09.gif" alt="Latest Products Image">
-                            </div>
+                                <div class="margin-b-20" style="margin-bottom: 1px;">
+       
+                                    <h2>Depth-averaged Suspended Sediment Concentration</h2>
+                                    
+                                <h4 style="font-weight: normal;">Most of the sediments came from the two rivers.</h4>
+                                <img class="img-responsive" src="img/970x647/dassc2.gif" alt="Latest Products Image" style="width: 60%;height: auto; margin-top: 10px; margin-bottom: 1px; margin-left: auto; margin-right: auto;">
+                            
                             <!-- End Pricing -->
                         </div>
                         
@@ -360,32 +335,57 @@
                     <!--// end row -->
                 </div>
             </div>
-        </div>
+
+        <!-- End Pricing -->
+
+
+
+<!-- Pricing -->
+        <div id="flux">
+          <div class="bg-color-sky-light">
+                <div class="content-log container">
+
+                                <div class="margin-b-20" style="margin-bottom: 1px;">
+       
+                                    <h2><br><br>Sediment flux into upper Galveston Bay</h2>
+                                    
+                                
+                                <img class="img-responsive" src="img/970x647/12.jpg" alt="Latest Products Image" style="width: 100%;height: auto; margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto;">
+<ul>
+                                    <li style="font-size: 18px;">The red transect marks the boundary between San Jacinto Estuary and upper Galveston Bay; </li>
+                                    <li style="font-size: 18px;">The San Jacinto River had a greater impact on sediment transport than Buffalo Bayou during Harvey.</li>
+
+                                </ul>
+
+                            
+                            <!-- End Pricing -->
+                        </div>
+                        </div>
+                        </div>
+                   
+                    <!--// end row -->
+                </div>
+     
+
         <!-- End Pricing -->
 
         <!-- Work -->
         <div id="work">
+  <div class="bg-color-sky-light">
             <div class="section-seperator">
                 <div class="content-md container">
-                    <div class="row margin-b-40">
+                    <div class="row margin-b-20">
                        
-                            <h2>Comparison between Model & Observation</h2>
-                            <p>There is mismatch between model results and sediment core data</p>
+                            <h2>Deposition thickness comparison </h2>
+                            <p style="font-size: 16px;">There is mismatch between model results and sediment core data.Estimated mass of deposit sediments within San Jacinto Estuary: 2.44&times; 10<sup>6</sup> tons (modeled), 7.73&times; 10<sup>6</sup> tons (observed)</p>
 				   
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Model: 4.08 &times; 10<sup>6</sup> tons</li>
-                                    <li class="pricing-list-item">Core data: 7.73 &times; 10<sup>6</sup> tons</li>
 
-                                </ul>
                     <!-- Inserted Images -->
-                    		<div class="row">
-                       		<div class="col-sm-6">
-                            		<img src="img/970x647/10.png" alt="Image 1" class="img-responsive"  style="width: 100%;">
-                        		</div>
-                        		<div class="col-sm-6">
-                            		<img src="img/970x647/11.png" alt="Image 2" class="img-responsive"  style="width: 100%;">
-                        		</div>
+
+                            		<img src="img/970x647/13.jpg" alt="Image 1" class="img-responsive"  style="width: 75%;margin-left: auto; margin-right: auto;">
+                        		
                     		</div>
+</div>
                     <!-- End Inserted Images -->
 
 
@@ -415,11 +415,18 @@
                     <div class="row">
                         <!-- Contact List -->
                        
-                            <h3>Summary <span class="text-uppercase margin-l-20">Human Resources</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                            <h2>Summary </h2>
+                            
                             <ul class="list-unstyled contact-list">
-                                <li>ABC </li>
-                                <li>ABC </li>
+                                <li style="font-size: 20px;">Buffalo Bayou and the San Jacinto River delivered a massive load of sediment to Galveston Bay during Hurricane Harvey. </li>
+                                <li style="font-size: 20px;">The San Jacinto River contributed the most to sediment flux into upper Galveston Bay</li>
+
+                            </ul>
+<h3>Future Works</h3>
+ <ul class="list-unstyled contact-list">
+                                <li style="font-size: 20px;">Improve sediment deposition calculations: use larger settling velocities of sediment; include prolonged flooding from Buffalo Bayou to represent reservoir drainage. </li>
+                                <li style="font-size: 20px;">Add a mercury transport module after we are satisfied with the sediment erosion/deposition patterns.</li>
+
                             </ul>
                         </div>
                         <!-- End Contact List -->
@@ -433,7 +440,7 @@
             
             <!-- Google Map -->
             <div class="map height-300">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d274825.14601901686!2d-94.98689222987853!3d29.462285142195732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863f77d9e50283fd%3A0xb64742d34b4f57f2!2z5Yqg5bCU57u05pav6aG_5rm-!5e0!3m2!1szh-CN!2sus!4v1700884793099!5m2!1szh-CN!2sus" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d445213.97384509543!2d-95.19325549198606!3d29.334132254437037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863f77d9e50283fd%3A0xb64742d34b4f57f2!2sGalveston%20Bay!5e0!3m2!1sen!2sus!4v1701721769427!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
         </div>
         <!-- End Contact -->
@@ -469,19 +476,19 @@
                             <h3>Reference</h3>
                             
                             <ul class="list-unstyled contact-list">
-                                <li>Dellapenna, T. M., Hoelscher, C., Hill, L., Al Mukaimi, M. E., & Knap, A. (2020). <i>How tropical cyclone flooding caused erosion and dispersal of mercury-contaminated sediment in an urban estuary: The impact of Hurricane Harvey on Buffalo Bayou and the San Jacinto Estuary, Galveston Bay, USA.</i> Science of the Total Environment, 748, 141226.</li>
+                                <li>[1]Dellapenna, T. M., Hoelscher, C., Hill, L., Al Mukaimi, M. E., & Knap, A. (2020). <i>How tropical cyclone flooding caused erosion and dispersal of mercury-contaminated sediment in an urban estuary: The impact of Hurricane Harvey on Buffalo Bayou and the San Jacinto Estuary, Galveston Bay, USA.</i> Science of the Total Environment, 748, 141226.</li>
 
-  						<li>Dellapenna, T. M., Hoelscher, C., Hill, L., Critides, L., Bell, M., Al Mukaimi, M. E., Du, J., Park, K., & Knap, A. H. (2022). <i>Hurricane Harvey Delivered a Massive Load of Mercury-Rich Sediment to Galveston Bay, TX, USA.</i> Estuaries and Coasts, 45(2), 428-444.</li>
+  						<li>[2]Dellapenna, T. M., Hoelscher, C., Hill, L., Critides, L., Bell, M., Al Mukaimi, M. E., Du, J., Park, K., & Knap, A. H. (2022). <i>Hurricane Harvey Delivered a Massive Load of Mercury-Rich Sediment to Galveston Bay, TX, USA.</i> Estuaries and Coasts, 45(2), 428-444.</li>
 
-  						<li>Du, J., Park, K., Dellapenna, T. M., & Clay, J. M. (2019). <i>Dramatic hydrodynamic and sedimentary responses in Galveston Bay and adjacent inner shelf to Hurricane Harvey.</i> Science of the Total Environment, 653, 554-564.</li>
+  						<li>[3]Du, J., Park, K., Dellapenna, T. M., & Clay, J. M. (2019). <i>Dramatic hydrodynamic and sedimentary responses in Galveston Bay and adjacent inner shelf to Hurricane Harvey.</i> Science of the Total Environment, 653, 554-564.</li>
 
-  						<li>Liu, Y., Wang, H., Cong, S., Zang, Z., Bi, N., Bian, C., Ge, J., & Wu, X. (2023). <i>Rapid oscillation of sediment transport between the Bohai Sea and the Yellow Sea induced by Typhoon Lekima (2019).</i> Marine Geology, 107160.</li>
+  						<li>[4]Liu, Y., Wang, H., Cong, S., Zang, Z., Bi, N., Bian, C., Ge, J., & Wu, X. (2023). <i>Rapid oscillation of sediment transport between the Bohai Sea and the Yellow Sea induced by Typhoon Lekima (2019).</i> Marine Geology, 107160.</li>
 
-  						<li>Stearns, A. I., Wellner, J. S., Kendall, J. J., & Khan, S. D. (2023). <i>Sediment routing in an incised valley during Hurricane Harvey (2017) in Houston, Texas, USA: Implications for modern sedimentation.</i> Geology.</li>
+  						<li>[5]Stearns, A. I., Wellner, J. S., Kendall, J. J., & Khan, S. D. (2023). <i>Sediment routing in an incised valley during Hurricane Harvey (2017) in Houston, Texas, USA: Implications for modern sedimentation.</i> Geology.</li>
 
-  						<li>Valle-Levinson, A., Olabarrieta, M., & Heilman, L. (2020). <i>Compound flooding in Houston-Galveston Bay during Hurricane Harvey.</i> Science of the Total Environment, 747, 141272.</li>
+  						<li>[6]Valle-Levinson, A., Olabarrieta, M., & Heilman, L. (2020). <i>Compound flooding in Houston-Galveston Bay during Hurricane Harvey.</i> Science of the Total Environment, 747, 141272.</li>
 
-  						<li>Warner, J. C., Armstrong, B., He, R., & Zambon, J. B. (2010). <i>Development of a coupled ocean atmosphere wave sediment transport (COAWST) modeling system.</i> Ocean modelling, 35(3), 230-244.</li>
+  						<li>[7]Warner, J. C., Armstrong, B., He, R., & Zambon, J. B. (2010). <i>Development of a coupled ocean atmosphere wave sediment transport (COAWST) modeling system.</i> Ocean modelling, 35(3), 230-244.</li>
                             </ul>
                         </div>
                         <!-- End Contact List -->
